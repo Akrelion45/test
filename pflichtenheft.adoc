@@ -40,7 +40,7 @@ Dokumentieren Sie ihre Top-Level-Architektur mit Hilfe eines Komponentendiagramm
 
 === Überblick Anwendungsfalldiagramm
 
-image::https://github.com/st-tu-dresden-praktikum/swt16w31/blob/master/artefacts/Anwendungsfalldiagramm.png?raw=true
+image::https://github.com/st-tu-dresden-praktikum/swt16w31/blob/master/artefacts/Anwendungsfalldiagramm.png?raw=true[Tux,250,350]
 
 === Akteure
 
