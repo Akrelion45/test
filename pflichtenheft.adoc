@@ -39,7 +39,11 @@ Dokumentieren Sie ihre Top-Level-Architektur mit Hilfe eines Komponentendiagramm
 == Anwendungsfälle
 
 === Überblick Anwendungsfalldiagramm
+// tag::attr-co[]
+[[img-sunset]] // <1>
+.A mountain sunset // <2>
 image::sunset.jpg[Sunset, 300, 200, link="https://github.com/st-tu-dresden-praktikum/swt16w31/blob/master/artefacts/Anwendungsfalldiagramm.png
+// end::attr-co[]
 === Akteure
 
 Akteure sind die Benutzer des Software-Systems oder Nachbarsysteme, welche darauf zugreifen. Dokumentieren Sie die Akteure in einer Tabelle. Diese Tabelle gibt einen Überblick über die Akteure und beschreibt sie kurz. Die Tabelle hat also mindestens zwei Spalten (Akteur Name und Kommentar).
