@@ -1,0 +1,114 @@
+= Pflichtenheft
+
+== Cateringservice
+
+__Version:__    *1.1*
+
+__Gruppe:__  	*31*
+
+__Status:__     *In Arbeit!*
+
+__Stand:__      *7.11.2016*
+
+== Zusammenfassung
+Dieses Dokument beschreibt den Verlauf von der Aufgabenstellung bis zur Entwicklung  in vielen kleinen Unterpunkten. 
+Es bietet eine Übersicht über die Funktionen der Software sowie der Analyse dieser.
+
+== Inhaltsverzeichnis
+
+== Aufgabenstellung und Zielsetzung
+Cateringservice
+„Essen und Trinken hält Leib und Seele zusammen“ besagt ein altes deutsches Sprichwort. Das dachte sich auch Hannes Wurst und baute seinen kleinen Imbissstand zu dem inzwischen renommierten Cateringservice Mampf mit vielen Angestellten und guter Auftragslage aus. Jetzt möchte er endlich auch eine Software haben, mit der er alle Abrechnungs-, Bestell- und Verwaltungsaufgaben einheitlich bearbeiten kann. Bisher nutze Herr Wurst dafür diverse Programme und ärgerte sich immer wieder über deren Inkompatibilität zueinander und den Mehraufwand durch getrennte Datenhaltung. Als Basis für die Softwareentwicklung gab er uns folgende Beschreibung seines kleinen Unternehmens:
+Mampf gliedert sich in vier Geschäftsfelder. Das Eventcatering übernimmt die Verpflegung bei großen Veranstaltungen, egal ob in Form eines Buffetts oder als Galadinner. Auf Wunsch gestaltet Mampf auch das komplette Event, d.h. neben den Speisen und Getränken wird auch Dekoration, Ausrüstung (also Geschirr, Tischtücher usw.) und Personal zur Verfügung gestellt, wobei der Kunde dann natürlich zusätzlich zum eigentlichen Preis für Lebensmittel und Arbeitszeit auch Leihgebühren und Personalkosten bezahlen muss. Der Partyservice beliefert private Feierlichkeiten mit kalten Platten – von Hochzeiten und Beerdigungen über Gartenfeste bis zu Omas 75sten Geburtstag. Hierbei gibt es Festpreise je nach Angebot und Personenanzahl (z.B. Schinkenplatte für 5 Personen zu 20,- EUR, Käseplatte für 3 Personen zu 12,50 EUR usw.) und Sonderaktionen (z.B. Sushi-Abend für 10 Personen). Eine Besonderheit von Mampf ist Mobile Breakfast – ein mobiler Frühstücksservice für kleinere Firmen ohne eigene Kantine. Zu festgelegten Zeiten können die Mitarbeiter sozusagen am Arbeitsplatz eine Auswahl an Frühstücksangeboten (belegte Brötchen, Müsli, Kaffee und Tee usw.) kaufen. Die Firmen buchen das Angebot monateweise. Problematisch ist allerdings die Planung dieses Angebotes – hier wird derzeit noch nach einer kostensparenden Lösung (z.B. in Form einer Vorbestellung) gesucht. Immer beliebter wird bei den Kunden auch das vierte Angebot von Mampf: Rent-a-Cook. Dabei wird Küchen- und Servicepersonal an Privathaushalte verliehen, um z.B. den Chef des Gastgebers mit kulinarischen Köstlichkeiten zu beeindrucken. Um die Lebensmittel müssen sich die Kunden dabei selbst kümmern.
+Hannes Wurst hat nun ganz genaue Vorstellungen von der zu entwickelnden Software: Sie soll die Kundenverwaltung unterstützen, die Personalverwaltung und -zuteilung übernehmen, die Termine planen, das Zubehör (Dekoration, Ausrüstung) verwalten, den Lebensmittelbedarf bestimmen (Anzahl Gerichte/Platten/belegte Brötchen, Menge an Getränken in Liter), die Rechnungsstellung an die Kunden vereinfachen und sämtliche
+Abrechnungen erleichtern. Die Lebensmittelbeschaffung muss nicht betrachtet werden, durch die langjährigen Erfahrungen bei Mampf ist der Einkaufspreis pro Gericht/Platte/Getränk jedoch bekannt.
+
+== Fachlicher Überblick
+Im Rahmen unseres Studiums müssen wir im 3. Semester ein Praktikum absolvieren, was den Ablauf in einem Betrieb simmulieren soll. Hier zu werden Gruppen gebildet und jeder dieser Gruppen eine Aufgabe zugewiesen. 
+Wir als Gruppe müssen nun für einen Kunden eine Software in Java erstellen mit allen Phasen die bei einer Software-Entwicklung dazu gehören. Wir erstellen als Gruppe eine Software für einen Cateringservice die dessen Abläufe modernisieren und vereinfach soll.
+
+
+== Systemgrenze und Top-Level-Architektur
+
+=== Kontextdiagramm
+Das Kontextdiagramm zeigt das geplante Software-System in seiner Umgebung. Zur Umgebung gehören alle Nutzergruppen des Systems und Nachbarsysteme. Die Grafik kann auch informell gehalten sein. Überlegen Sie sich dann geeignete Symbole. Die Grafik kann beispielsweise mit Visio erstellt werden. Wenn nötig, erläutern Sie diese Grafik.
+
+=== Top-level architecture
+Dokumentieren Sie ihre Top-Level-Architektur mit Hilfe eines Komponentendiagramm.
+
+== Anwendungsfälle
+
+=== Überblick Anwendungsfalldiagramm
+image::sunset.jpg[Sunset, 300, 200, link="https://github.com/st-tu-dresden-praktikum/swt16w31/blob/master/artefacts/Anwendungsfalldiagramm.png
+=== Akteure
+
+Akteure sind die Benutzer des Software-Systems oder Nachbarsysteme, welche darauf zugreifen. Dokumentieren Sie die Akteure in einer Tabelle. Diese Tabelle gibt einen Überblick über die Akteure und beschreibt sie kurz. Die Tabelle hat also mindestens zwei Spalten (Akteur Name und Kommentar).
+
+// See http://asciidoctor.org/docs/user-manual/#tables
+[options="header"]
+|===
+|Name |Beschreibung |
+|Servicepersonal    |Servicepersonal in einem Cateringservice. Grundlegende Zugriffsrechte auf die Software            |
+|Koch				|Gleiche Rechte wie das Servicepersonal, wobei seine Aufgabe vorwiegend das Kochen ist. 		   |
+|Systemadministrator|Erhält Vollzugriff auf die Software und ist erster Ansprechpartner im Unternehmen bei Problemen oder fragen zu dieser. |
+|Chef				|Der Boss. Er trägt die Entscheidungen und neben Vollzugriff ist für ihn vorwiegend die Buchhaltung interessant.		|
+|===
+
+=== Anwendungsfallbeschreibungen
+Neben dem typischen Anlegen, Ändern, Suchen und Löschen von Bestellungen, Nutzern oder Templates muss die Software auch den Lagerbestand ermitteln und bearbeiten können. 
+Der Login für jeden Mitarbeiter ist ebenfalls ein Anwendungsfall.
+Weitere Anwendungsfälle sind die Buchhaltung einzusehen, Rechnungen zu erstellen und Mitarbeitern rollen zuzuweisen.
+Ebenfalls muss der Terminkalender erstellt und bei Bedarf bearbeitet werden können.
+
+== Anforderungen
+
+=== Muss-Kriterien
+• Login
+• Kunden bzw. Nutzererstellung
+• Zuteilung von Rollen an verschiedene Benutzer
+• Bearbeiten / Löschen / Filtern / Suchen von Nutzern, Kunden und Aufträgen
+• Termine im Kalender hinzufügen und löschen sowie den Kalender anzeigen
+• Lagerverwaltung mit hinzufügen und löschen von Lagerprodukten sowie einer Warnmeldung bei niedrigen Bestand
+• Rechnungserstellung
+• Buchhaltung mit Finanzübersicht
+
+=== Kann-Kriterien
+• Newsletter oder Emails an Kunden senden
+• Neue Templates erstellen
+• Zutaten für die Gerichte des Rent-a-Cook Service anzeigen
+
+== GUI Prototyp
+Zu finden in GitHub
+
+=== Überblick: Dialoglandkarte
+Erstellen Sie ein Übersichtsdiagramm, das das Zusammenspiel Ihrer Masken zur Laufzeit darstellt. Also mit welchen Aktionen zwischen den Masken navigiert wird. Die nachfolgende Abbildung zeigt eine an die Pinnwand gezeichnete Dialoglandkarte. Ihre Karte sollte zusätzlich die Buttons/Funktionen darstellen, mit deren Hilfe Sie zwischen den Masken navigieren.
+
+=== Dialogbeschreibung
+Für jeden Dialog:
+
+1. Kurze textuelle Dialogbeschreibung eingefügt: Was soll der jeweilige Dialog? Was kann man damit tun? Überblick?
+2. Maskenentwürfe (Screenshot, Mockup)
+3. Maskenelemente (Ein/Ausgabefelder, Aktionen wie Buttons, Listen, …)
+4. Evtl. Maskendetails, spezielle Widgets
+
+== Datenmodell
+
+=== Überblick: Klassendiagramm
+UML-Analyseklassendiagramm
+
+=== Klassen und Enumerationen
+Dieser Abschnitt stellt eine Vereinigung von Glossar und der Beschreibung von Klassen/Enumerationen dar. Jede Klasse und Enumeration wird in Form eines Glossars textuell beschrieben. Zusätzlich werden eventuellen Konsistenz- und Formatierungsregeln aufgeführt.
+
+// See http://asciidoctor.org/docs/user-manual/#tables
+[options="header"]
+|===
+|Klasse/Enumeration |Beschreibung |
+|…                  |…            |
+|===
+
+== Aktzeptanztestfälle
+Mithilfe von Akzeptanztests wird geprüft, ob die Software die funktionalen Erwartungen und Anforderungen im Gebrauch erfüllt. Diese sollen und können aus den Anwendungsfallbeschreibungen und den UML-Sequenzdiagrammen abgeleitet werden. D.h., pro (komplexen) Anwendungsfall gibt es typischerweise mindestens ein Sequenzdiagramm (welches ein Szenarium beschreibt). Für jedes Szenarium sollte es einen Akzeptanztestfall geben. Listen Sie alle Akzeptanztestfälle in tabellarischer Form auf.
+Jeder Testfall soll mit einer ID versehen werde, um später zwischen den Dokumenten (z.B. im Test-Plan) referenzieren zu können.
+
+== Offene Punkte
+Offene Punkte werden entweder direkt in der Spezifikation notiert. Wenn das Pflichtenheft  zum finalen Review vorgelegt wird, sollte es keine offenen Punkte mehr geben.
