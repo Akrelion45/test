@@ -1,0 +1,40 @@
+= Zeiterfassung für Gruppe 31
+
+Notieren Sie die Zeit in Minuten für jeden Entwickler und für Team-Treffen pro Woche.
+Die verwendete Zeit beinhaltet auch das Lesen von Dokumentationen, Besprechungen mit Teamkollegen und sonstige auf das Praktikum bezogene Aufgaben.
+
+// See http://asciidoctor.org/docs/user-manual/#tables
+[option="headers"]
+|===
+|Datum |Uhrzeit |Nils |Markus |Deniz |Stephan |Tuan |Meeting
+|13.10   |14:50-15:50   |1h   |…    |…    |…    |…    |…
+|18.10   |16:20-16:50   |30 min    |…    |…    |…    |…    |Gruppentreffen
+|20.10   |14:50-15:50   |1h    |…    |…    |…    |…    |Mit Tutor
+|23.10   |16:00-17:00   |1h    |…    |…    |…    |…    |…
+|24.10   |15:00-17:00   |2h    |…    |…    |…    |…    |Gruppentreffen
+|25.10   |16:20-16:50   |30 min    |…    |…    |…    |…    |Gruppentreffen
+|26.10   |12:00-13:30   |1h 30 min    |…    |…    |…    |…    |Gruppentreffen per Skype
+|27.10   |14:50-15:50   |1h    |…    |…    |…    |…    |Mit Tutor
+|31.10   |16:00-18:00   |2h    |…    |…    |…    |…    |Gruppentreffen per Skype
+|2.11    |11:30-18:30   |7h    |…    |…    |…    |…    |…
+|3.11    |14:50-15:50   |1h    |…    |…    |…    |…    |Mit Tutor
+|6.11   |13:00-14:00   |1h    |…    |…    |…    |…    |…
+|7.11   |15:00-17:30   |2h 30 min    |…    |…    |…    |…    |…
+|…   |…   |…    |…    |…    |…    |…    |…
+|===
+
+
+Nils Heigener:
+13.10 14:50-15:50 Verkaufsgesrpäch vorbereitet.
+18.10 16:20-16:50 Treffen mit der Gruppe um Verkaufsgesrpäch vorzubereiten
+20.10 14:50- 15:50 Treffen mit Tutor
+23.10 16:00-17:00 MagicDraw installation und erstes arbeiten damit
+24.10 2h- Treffen mit der Gruppe / Arbeiten an der Analyseaufgabe
+25.10 30 min Diskussion mit der Gruppe über die Diagramme.
+26.10 1:30 12:00 - 13:30 Diagrammentwicklung mit Markus sowie erste Ansätze für den GUI.
+27.10 1:00 tutortreffen
+31.10 1:30 Diagramme v erbessern, plichtenheft, Protokoll, Videoshop,
+2.11 7h 11:30-18:30 Prototyp, Prokoll, Diagramme
+3.11 1h 5.DS Treffen mit erik
+6.11 1h 13:00-14:00 Großer Prototyp
+7.11 2h 
