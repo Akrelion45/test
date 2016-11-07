@@ -42,7 +42,7 @@ Dokumentieren Sie ihre Top-Level-Architektur mit Hilfe eines Komponentendiagramm
 // tag::attr-co[]
 [[img-sunset]] // <1>
 .A mountain sunset // <2>
-image::sunset.jpg[Sunset, 300, 200, link="https://github.com/st-tu-dresden-praktikum/swt16w31/blob/master/artefacts/Anwendungsfalldiagramm.png
+image::sunset.jpg[Sunset, 300, 200, link="https://github.com/st-tu-dresden-praktikum/swt16w31/blob/master/artefacts/Anwendungsfalldiagramm.png?raw=true
 // end::attr-co[]
 === Akteure
 
